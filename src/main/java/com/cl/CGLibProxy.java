@@ -79,8 +79,8 @@ public class CGLibProxy {
         //传入代理的类
         MyIntercepter<SayHello> myIntercepter = new MyIntercepter(sayHello);
         //获取代理对象
-        SayHello sayHelloProxy = myIntercepter.getProxy();
+        SayHello targetProxy = myIntercepter.getProxy();
         //调用方法
-        sayHelloProxy.sayHello();
+        targetProxy.sayHello();
     }
 }
